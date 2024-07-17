@@ -17,7 +17,7 @@ const HeroCart = () => {
         <div className="flex flex-col justify-center items-center py-10">
           <div className="w-24 h-24 rounded-full border-[1px] border-brand1">
             <Image
-              src={merajImage}
+              src='https://i.ibb.co/hXZZFmD/IMG-9071-1.jpg'
               alt="merajImg"
               objectFit="cover"
               width={950}
