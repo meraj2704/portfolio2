@@ -1,0 +1,18 @@
+import React from "react";
+import SectionTitleHeaderTag from "../ui/SectionTitleHeaderTag";
+import SectionHeader from "../ui/SectionHeader";
+import { SkillsTab } from "./SkillsTab";
+
+const Skills = () => {
+  return (
+    <div className="bg-[url('https://i.ibb.co/7bgkY1G/Skills.png')] py-10 xl:py-20">
+      <div className="container mx-auto flex flex-col justify-center items-center space-y-20">
+        <SectionHeader/>
+        <SectionTitleHeaderTag title='Skills' content='I am striving to never stop learning and improving' />
+        <SkillsTab/>
+      </div>
+    </div>
+  );
+};
+
+export default Skills;

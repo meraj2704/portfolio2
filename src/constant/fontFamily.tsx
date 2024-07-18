@@ -10,6 +10,7 @@ export const skills =[
     {skillName:'JS'},
     {skillName:'TS'},
     {skillName:'React'},
+    {skillName:'Next.js'},
     {skillName:'Node.js'},
     {skillName:'Express.js'},
     {skillName:'MongoDB'},
