@@ -11,7 +11,7 @@ const SectionTitleHeaderTag = ({
   content,
 }: SectionTitleHeaderTagProps) => {
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center pb-10 px-5 md:px-10">
       <div className="flex flex-col justify-center items-center gap-2">
         <h1 className="text-6xl text-brand1">{title}</h1>
         <div dangerouslySetInnerHTML={{ __html: titleBorderSvg }}></div>

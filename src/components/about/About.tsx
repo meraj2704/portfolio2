@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div className="w-full bg-[url('https://i.ibb.co/zJFVqfR/about-bg.jpg')] bg-cover bg-center">
       <div className="container mx-auto py-10 px-5 md:px-10 2xl:px-0 space-y-20">
-        <div className="hidden w-full md:flex justify-center items-center py-16">
+        <div className="hidden w-full xl:flex justify-center items-center py-16">
           <SectionHeader />
         </div>
         <div className="w-full h-full flex flex-col xl:flex-row justify-between items-start gap-16">

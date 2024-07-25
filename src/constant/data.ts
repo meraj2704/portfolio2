@@ -54,3 +54,49 @@ export const frontSkills = [
         icon:SiRedux
     },
 ]
+
+
+export const backendSkills = [
+    {
+        name:'JavaScript',
+        color:'#E7A020',
+        icon:IoLogoJavascript
+    },
+    {
+        name:'TypeScript',
+        color:'#3A7CC8',
+        icon:SiTypescript
+    },
+    {
+        name:'Node.js',
+        color:'#E54F26',
+        icon:FaHtml5
+
+    },
+    {
+        name:'Express.js',
+        color:'#0C73B8',
+        icon:FaCss3Alt
+    },
+    {
+        name:'MongoDB',
+        color:'#E54F26',
+        icon:RiTailwindCssFill
+    },
+    
+    {
+        name:'Mongoose',
+        color:'#51D6FE',
+        icon:FaReact
+    },
+    {
+        name:'Docker',
+        color:'#000000',
+        icon:RiNextjsLine
+    },
+    {
+        name:'Redis',
+        color:'#7A51BD',
+        icon:SiRedux
+    },
+]
