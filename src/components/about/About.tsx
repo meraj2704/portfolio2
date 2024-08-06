@@ -7,6 +7,7 @@ const aboutBgImage = "/assets/about-bg.jpg";
 const About = () => {
   return (
     <div
+    id="about"
       className={`w-full bg-cover bg-center`}
       style={{ backgroundImage: `url(${aboutBgImage})` }}
     >
