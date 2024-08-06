@@ -14,3 +14,7 @@
   --js:#E7A020;
   --react:#28A9E0;
 }
+
+.about-bg {
+  background-image: url('/assets/.about-bg.jpg');
+}

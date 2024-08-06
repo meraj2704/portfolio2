@@ -6,7 +6,6 @@ import { TbApi } from "react-icons/tb";
 import SkillCart from "./SkillCart";
 import { backendSkills, frontSkills } from "@/constant/data";
 import { useState } from "react";
-import { FaRegFlag } from "react-icons/fa6";
 
 export function SkillsTab() {
   const [selectedTab, setSelectedTab] = useState("front-end");
@@ -14,43 +13,35 @@ export function SkillsTab() {
     <Tabs defaultValue="front" className="w-full">
       <TabsList className="flex justify-center items-center gap-10 xl:gap-20">
         <TabsTrigger
-        onClick={()=> setSelectedTab("front-end")}
+          onClick={() => setSelectedTab("front-end")}
           value="front"
-          className="bg-brand2 px-10 py-4 rounded-xl border-l-8 border-l-react relative"
+          className={`${
+            selectedTab === "front-end"
+              ? "bg-brand2 text-bg1"
+              : "bg-transparent text-white "
+          } border-y border-r border-y-brand2 border-r-brand2 px-10 py-4 rounded-xl border-l-8 border-l-react`}
         >
-          <div
-            className={` ${
-              selectedTab === "front-end" ? "absolute" : "hidden"
-            } absolute top-[-20px] right-0`}
-          >
-            <FaRegFlag className="text-html text-xl" />
-          </div>
           <div className="flex flex-col justify-center items-center gap-2">
             <FiMonitor className="text-base md:text-xl xl:text-3xl" />
             <p
-              className={`text-xs md:text-base xl:text-2xl text-bg1 ${ibm.className}`}
+              className={`text-xs md:text-base xl:text-2xl ${ibm.className}`}
             >
               Front-End <span className="hidden md:inline">Developer</span>
             </p>
           </div>
         </TabsTrigger>
         <TabsTrigger
-         onClick={()=> setSelectedTab("backend")}
+          onClick={() => setSelectedTab("backend")}
           value="backend"
-          className="bg-brand2 px-10 py-4 rounded-xl border-l-8 border-l-react relative"
+          className={`${
+            selectedTab === "backend"
+              ? "bg-brand2 text-bg1"
+              : "bg-transparent text-white "
+          } border-y border-r border-y-brand2 border-r-brand2 px-10 py-4 rounded-xl border-l-8 border-l-react`}
         >
-          <div
-            className={` ${
-              selectedTab === "backend" ? "absolute" : "hidden"
-            } absolute top-[-20px] right-0`}
-          >
-            <FaRegFlag className="text-html text-xl" />
-          </div>
           <div className="flex flex-col justify-center items-center gap-2">
             <TbApi className="text-base md:text-xl xl:text-3xl" />
-            <p
-              className={`text-xs md:text-base xl:text-2xl text-bg1 ${ibm.className}`}
-            >
+            <p className={`text-xs md:text-base xl:text-2xl ${ibm.className}`}>
               Backend <span className="hidden md:inline">Developer</span>
             </p>
           </div>

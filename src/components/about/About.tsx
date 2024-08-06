@@ -1,18 +1,21 @@
 import React from "react";
-
 import Image from "next/image";
 import { ibm } from "@/constant/fontFamily";
 import SectionScroll from "../ui/SectionScroll";
 
+const aboutBgImage = "/assets/about-bg.jpg";
 const About = () => {
   return (
-    <div className="w-full bg-[url('https://i.ibb.co/zJFVqfR/about-bg.jpg')] bg-cover bg-center">
+    <div
+      className={`w-full bg-cover bg-center`}
+      style={{ backgroundImage: `url(${aboutBgImage})` }}
+    >
       <div className="container mx-auto py-10 px-5 md:px-10 2xl:px-0 space-y-20">
         <div className="hidden w-full xl:flex justify-center items-center py-16">
           <SectionScroll />
         </div>
         <div className="w-full h-full flex flex-col xl:flex-row justify-between items-start gap-16">
-          <div className="w--full xl:w-2/3 h-full flex flex-col justify-between gap-10 2xl:gap-36">
+          <div className="w-full xl:w-2/3 h-full flex flex-col justify-between gap-10 2xl:gap-36">
             <div className="flex">
               <div className="px-10 border-2 border-brand1 bg-bg1 text-white rounded-tl-[30px] rounded-br-[30px]">
                 <p className="text-3xl xl:text-6xl">About Me</p>
@@ -25,7 +28,7 @@ const About = () => {
                   {" "}
                   Hello!
                 </span>{" "}
-                <br /> My name is Meraj and I specialize in web developement{" "}
+                <br /> My name is Meraj and I specialize in web development{" "}
                 <br />
                 that utilizes
                 <span className="text-base text-brand1"> JavaScript</span>,{" "}

@@ -9,7 +9,7 @@ interface SkillCartProps {
 }
 const SkillCart = ({ skill }: SkillCartProps) => {
   return (
-    <div className="col-span-1 flex gap-1 xl:gap-2 flex-col justify-start items-center">
+    <div className="col-span-1 flex gap-1 xl:gap-2 flex-col justify-start items-center hover:scale-105">
       <div
       style={{ backgroundColor: skill.color }}
         className={`w-16 h-16 md:w-24 md:h-24 2xl:w-36 2xl:h-36 flex justify-center items-center rounded-full`}

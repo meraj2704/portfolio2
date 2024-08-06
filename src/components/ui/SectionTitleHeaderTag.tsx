@@ -16,7 +16,7 @@ const SectionTitleHeaderTag = ({
         <h1 className="text-6xl text-brand1">{title}</h1>
         <div dangerouslySetInnerHTML={{ __html: titleBorderSvg }}></div>
       </div>
-      <p className={`text-base text-white mt-4 ${ibm.className} `}>{content}</p>
+      <p className={`text-center text-base text-white mt-4 ${ibm.className} `}>{content}</p>
     </div>
   );
 };
