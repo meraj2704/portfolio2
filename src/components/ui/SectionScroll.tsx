@@ -1,7 +1,7 @@
 import { scrollSvg } from "@/constant/scroll";
 import React from "react";
 
-const SectionHeader = () => {
+const SectionScroll = () => {
   return (
     <div
       className=" xl:h-24"
@@ -10,4 +10,4 @@ const SectionHeader = () => {
   );
 };
 
-export default SectionHeader;
+export default SectionScroll;

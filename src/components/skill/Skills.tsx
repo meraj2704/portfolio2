@@ -1,6 +1,6 @@
 import React from "react";
 import SectionTitleHeaderTag from "../ui/SectionTitleHeaderTag";
-import SectionHeader from "../ui/SectionHeader";
+import SectionHeader from "../ui/SectionScroll";
 import { SkillsTab } from "./SkillsTab";
 
 const Skills = () => {

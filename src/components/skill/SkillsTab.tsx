@@ -1,18 +1,30 @@
+"use client";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ibm } from "@/constant/fontFamily";
 import { FiMonitor } from "react-icons/fi";
 import { TbApi } from "react-icons/tb";
 import SkillCart from "./SkillCart";
 import { backendSkills, frontSkills } from "@/constant/data";
+import { useState } from "react";
+import { FaRegFlag } from "react-icons/fa6";
 
 export function SkillsTab() {
+  const [selectedTab, setSelectedTab] = useState("front-end");
   return (
     <Tabs defaultValue="front" className="w-full">
       <TabsList className="flex justify-center items-center gap-10 xl:gap-20">
         <TabsTrigger
+        onClick={()=> setSelectedTab("front-end")}
           value="front"
-          className="bg-brand2 px-10 py-4 rounded-xl border-l-8 border-l-react"
+          className="bg-brand2 px-10 py-4 rounded-xl border-l-8 border-l-react relative"
         >
+          <div
+            className={` ${
+              selectedTab === "front-end" ? "absolute" : "hidden"
+            } absolute top-[-20px] right-0`}
+          >
+            <FaRegFlag className="text-html text-xl" />
+          </div>
           <div className="flex flex-col justify-center items-center gap-2">
             <FiMonitor className="text-base md:text-xl xl:text-3xl" />
             <p
@@ -23,9 +35,17 @@ export function SkillsTab() {
           </div>
         </TabsTrigger>
         <TabsTrigger
+         onClick={()=> setSelectedTab("backend")}
           value="backend"
-          className="bg-brand2 px-10 py-4 rounded-xl border-l-8 border-l-react"
+          className="bg-brand2 px-10 py-4 rounded-xl border-l-8 border-l-react relative"
         >
+          <div
+            className={` ${
+              selectedTab === "backend" ? "absolute" : "hidden"
+            } absolute top-[-20px] right-0`}
+          >
+            <FaRegFlag className="text-html text-xl" />
+          </div>
           <div className="flex flex-col justify-center items-center gap-2">
             <TbApi className="text-base md:text-xl xl:text-3xl" />
             <p

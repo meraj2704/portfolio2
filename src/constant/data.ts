@@ -20,27 +20,27 @@ export const frontSkills = [
     },
     {
         name:'CSS',
-        color:'#0C73B8',
+        color:'#3BA4DF',
         icon:FaCss3Alt
     },
     {
         name:'Tailwind',
-        color:'#E54F26',
+        color:'#41B9D5',
         icon:RiTailwindCssFill
     },
     {
         name:'JavaScript',
-        color:'#E7A020',
+        color:'#F7E02B',
         icon:IoLogoJavascript
     },
     {
         name:'TypeScript',
-        color:'#3A7CC8',
+        color:'#367DC7',
         icon:SiTypescript
     },
     {
         name:'React',
-        color:'#51D6FE',
+        color:'#182D73',
         icon:FaReact
     },
     {
@@ -59,44 +59,44 @@ export const frontSkills = [
 export const backendSkills = [
     {
         name:'JavaScript',
-        color:'#E7A020',
+        color:'#F7E02B',
         icon:IoLogoJavascript
     },
     {
         name:'TypeScript',
-        color:'#3A7CC8',
+        color:'#367DC7',
         icon:SiTypescript
     },
     {
         name:'Node.js',
-        color:'#E54F26',
+        color:'#8FC718',
         icon:FaHtml5
 
     },
     {
         name:'Express.js',
-        color:'#0C73B8',
+        color:'#94C84C',
         icon:FaCss3Alt
     },
     {
         name:'MongoDB',
-        color:'#E54F26',
+        color:'#51EE69',
         icon:RiTailwindCssFill
     },
     
     {
         name:'Mongoose',
-        color:'#51D6FE',
+        color:'#8C090F',
         icon:FaReact
     },
     {
         name:'Docker',
-        color:'#000000',
+        color:'#2B71D8',
         icon:RiNextjsLine
     },
     {
         name:'Redis',
-        color:'#7A51BD',
+        color:'#C83835',
         icon:SiRedux
     },
 ]
