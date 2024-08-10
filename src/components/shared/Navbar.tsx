@@ -1,13 +1,9 @@
-// components/Navbar.tsx
 "use client";
 
 import { ibm } from "@/constant/fontFamily";
 import React, { useEffect, useState } from "react";
-
-
+import { motion } from "framer-motion";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-
-
 
 const Navbar = () => {
   const [isScrolled, setScrolled] = useState(false);
@@ -29,7 +25,10 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div
+    <motion.div
+    initial={{ y: -100}}
+    animate={{ y: 0 }}
+    
       className={`w-full top-0 z-50 transition-all duration-300 border-b-[1px] border-b-grey ${
         isScrolled ? "fixed bg-bg1 shadow-lg opacity-95" : "absolute bg-transparent"
       }`}
@@ -39,11 +38,13 @@ const Navbar = () => {
           <p className="text-base md:text-2xl xl:text-3xl font-medium text-brand1">
             {"</>"}
           </p>
-          <p
+          <motion.p
+          initial={{y:-70}}
+          animate={{y:0}}
             className={`text-base md:text-2xl xl:text-3xl font-medium text-white ${ibm.className}`}
           >
             Meraj Hossain
-          </p>
+          </motion.p>
         </div>
         <div className="flex gap-5">
           <p
@@ -77,7 +78,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-    </div>
+    </motion.div>
   );
 };
 

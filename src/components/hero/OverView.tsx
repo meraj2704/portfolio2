@@ -1,9 +1,14 @@
 import { ibm } from "@/constant/fontFamily";
 import React from "react";
+import {motion} from 'framer-motion'
 
 const OverView = () => {
   return (
-    <div className="flex justify-center items-center">
+    <motion.div
+    initial={{x:"-100vw"}}
+    animate={{x:0}}
+    transition={{delay:0.2,type:'spring', stiffness:120}}
+    className="flex justify-center items-center">
       <div
         className={`flex flex-col justify-center items-center px-8 py-12 rounded-[80px] bg-bg2 space-y-12 ${ibm.className}`}
       >
@@ -29,7 +34,7 @@ const OverView = () => {
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

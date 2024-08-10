@@ -7,11 +7,16 @@ import { FaBusinessTime, FaMailBulk } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import SkillButton from "../ui/SkillButton";
 import ResumeDownloadButton from "./ResumeDownloadButton";
+import {motion} from 'framer-motion'
 const ibm = IBM_Plex_Mono({ subsets: ["latin"], weight: ["400", "700"] });
 const HeroCart = () => {
   const merajImage = "/assets/merajImg.jpg";
   return (
-    <div className="w-[292px] h-[572px] relative">
+    <motion.div
+    initial={{x:'-100vw'}}
+    animate={{x:0}}
+    transition={{delay:0.2, type:'spring', stiffness:120}}
+    className="w-[292px] h-[572px] relative">
       <div className="w-full h-full bg-bg1 absolute border-4 border-brand1 rounded-tl-[160px] rounded-br-[160px]"></div>
       <div className="w-full h-full bg-bg1 absolute border-4 border-white rounded-tl-[160px] rounded-br-[160px] right-[-3px] bottom-[-3px]">
         <div className="flex flex-col justify-center items-center py-10">
@@ -63,7 +68,7 @@ const HeroCart = () => {
             <ResumeDownloadButton/>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
