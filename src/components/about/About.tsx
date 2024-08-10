@@ -7,14 +7,11 @@ const aboutBgImage = "/assets/about-bg.jpg";
 const About = () => {
   return (
     <div
-    id="about"
+      id="about"
       className={`w-full bg-cover bg-center`}
       style={{ backgroundImage: `url(${aboutBgImage})` }}
     >
-      <div className="container mx-auto py-10 px-5 md:px-10 2xl:px-0 space-y-20">
-        <div className="hidden w-full xl:flex justify-center items-center py-16">
-          <SectionScroll />
-        </div>
+      <div className="container mx-auto py-20 px-5 md:px-10 2xl:px-0 space-y-20">
         <div className="w-full h-full flex flex-col xl:flex-row justify-between items-start gap-16">
           <div className="w-full xl:w-2/3 h-full flex flex-col justify-between gap-10 2xl:gap-36">
             <div className="flex">

@@ -6,7 +6,12 @@ import { SiTypescript } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { RiNextjsLine } from "react-icons/ri";
 import { SiRedux } from "react-icons/si";
-
+import { FaNodeJs } from "react-icons/fa";
+import { SiExpress } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
+import { SiMongoose } from "react-icons/si";
+import { FaDocker } from "react-icons/fa";
+import { SiRedis } from "react-icons/si";
 
 
 
@@ -70,33 +75,33 @@ export const backendSkills = [
     {
         name:'Node.js',
         color:'#8FC718',
-        icon:FaHtml5
+        icon:FaNodeJs
 
     },
     {
         name:'Express.js',
-        color:'#94C84C',
-        icon:FaCss3Alt
+        color:'#3A3A3A',
+        icon:SiExpress
     },
     {
         name:'MongoDB',
         color:'#51EE69',
-        icon:RiTailwindCssFill
+        icon:SiMongodb
     },
     
     {
         name:'Mongoose',
         color:'#8C090F',
-        icon:FaReact
+        icon:SiMongoose
     },
     {
         name:'Docker',
         color:'#2B71D8',
-        icon:RiNextjsLine
+        icon:FaDocker
     },
     {
         name:'Redis',
         color:'#C83835',
-        icon:SiRedux
+        icon:SiRedis
     },
 ]

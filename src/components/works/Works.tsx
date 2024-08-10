@@ -8,14 +8,11 @@ const Works = () => {
   const aboutBgImage = "/assets/about-bg.jpg";
   return (
     <div
-    id="works"
+      id="works"
       className="w-full  bg-cover bg-center py-10"
       style={{ backgroundImage: `url(${aboutBgImage})` }}
     >
       <div className="container mx-auto flex flex-col justify-center items-center xl:space-y-20">
-        <div className="hidden xl:block">
-          <SectionScroll />
-        </div>
         <SectionTitleHeaderTag
           title="Projects"
           content="I am striving to never stop learning and improving"
@@ -25,7 +22,7 @@ const Works = () => {
         <ProjectsCarousel />
       </div>
       <div className="flex justify-center items-center mt-10">
-        <ButtonFill content="See All"/>
+        <ButtonFill content="See All" />
       </div>
     </div>
   );

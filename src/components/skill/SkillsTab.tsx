@@ -19,7 +19,7 @@ export function SkillsTab() {
             selectedTab === "front-end"
               ? "bg-brand2 text-bg1"
               : "bg-transparent text-white "
-          } border-y border-r border-y-brand2 border-r-brand2 px-10 py-4 rounded-xl border-l-8 border-l-react`}
+          } hover:scale-105 border-y border-r border-y-brand2 border-r-brand2 px-10 py-4 rounded-xl border-l-8 border-l-react`}
         >
           <div className="flex flex-col justify-center items-center gap-2">
             <FiMonitor className="text-base md:text-xl xl:text-3xl" />
@@ -37,7 +37,7 @@ export function SkillsTab() {
             selectedTab === "backend"
               ? "bg-brand2 text-bg1"
               : "bg-transparent text-white "
-          } border-y border-r border-y-brand2 border-r-brand2 px-10 py-4 rounded-xl border-l-8 border-l-react`}
+          } hover:scale-105 border-y border-r border-y-brand2 border-r-brand2 px-10 py-4 rounded-xl border-l-8 border-l-react`}
         >
           <div className="flex flex-col justify-center items-center gap-2">
             <TbApi className="text-base md:text-xl xl:text-3xl" />
