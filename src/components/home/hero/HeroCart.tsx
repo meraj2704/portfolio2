@@ -5,7 +5,7 @@ import React from "react";
 import { CiLocationOn } from "react-icons/ci";
 import { FaBusinessTime, FaMailBulk } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
-import SkillButton from "../ui/SkillButton";
+import SkillButton from "../../ui/SkillButton";
 import ResumeDownloadButton from "./ResumeDownloadButton";
 import {motion} from 'framer-motion'
 const ibm = IBM_Plex_Mono({ subsets: ["latin"], weight: ["400", "700"] });

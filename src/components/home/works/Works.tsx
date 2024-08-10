@@ -1,8 +1,10 @@
 import React from "react";
-import SectionTitleHeaderTag from "../ui/SectionTitleHeaderTag";
-import SectionScroll from "../ui/SectionScroll";
+
+
 import { ProjectsCarousel } from "./ProjectsCarousel";
-import ButtonFill from "../ui/ButtonFill";
+import SectionTitleHeaderTag from "@/components/ui/SectionTitleHeaderTag";
+import ButtonFill from "@/components/ui/ButtonFill";
+
 
 const Works = () => {
   const aboutBgImage = "/assets/about-bg.jpg";

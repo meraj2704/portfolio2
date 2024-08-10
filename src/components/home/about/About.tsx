@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { ibm } from "@/constant/fontFamily";
-import SectionScroll from "../ui/SectionScroll";
+import SectionScroll from "../../ui/SectionScroll";
 
 const aboutBgImage = "/assets/about-bg.jpg";
 const About = () => {

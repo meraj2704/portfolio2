@@ -1,7 +1,7 @@
 import React from "react";
-import SectionTitleHeaderTag from "../ui/SectionTitleHeaderTag";
+import SectionTitleHeaderTag from "../../ui/SectionTitleHeaderTag";
 import { SkillsTab } from "./SkillsTab";
-import SectionScroll from "../ui/SectionScroll";
+import SectionScroll from "../../ui/SectionScroll";
 
 const Skills = () => {
   return (
