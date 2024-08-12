@@ -15,7 +15,7 @@ const About = () => {
         <div className="w-full h-full flex flex-col xl:flex-row justify-between items-start gap-16">
           <div className="w-full xl:w-2/3 h-full flex flex-col justify-between gap-10 2xl:gap-36">
             <div className="flex">
-              <div className="px-10 border-2 border-brand1 bg-bg1 text-white rounded-tl-[30px] rounded-br-[30px]">
+              <div className="px-10 py-2 border-2 border-brand1 bg-bg1 hover:scale-105 hover:bg-brand1 hover:text-bg2 text-white rounded-tl-[30px] rounded-br-[30px]">
                 <p className="text-3xl xl:text-6xl">About Me</p>
               </div>
             </div>

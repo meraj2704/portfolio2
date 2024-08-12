@@ -38,7 +38,7 @@ const Navbar = () => {
       <nav className="container mx-auto px-5 md:px-10 xl:px-0 flex justify-between items-center py-3">
         <div className="flex gap-3">
           <p className="text-base md:text-2xl xl:text-3xl font-medium text-brand1">
-            {"</>"}
+            {"<M/>"}
           </p>
           <motion.p
             initial={{ y: -70 }}
