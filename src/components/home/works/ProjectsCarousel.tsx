@@ -8,6 +8,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
+import { ubuntu } from "@/constant/fontFamily";
 
 export function ProjectsCarousel() {
   return (
@@ -26,7 +27,7 @@ export function ProjectsCarousel() {
                 />
                 <div className="absolute w-full h-full rounded-md bg-black opacity-0 z-10 transition-opacity duration-200 ease-out group-hover:opacity-60"></div>
                 <div className="flex flex-col justify-center items-center absolute bottom-[-100px] left-[50%] translate-x-[calc(-50%)] transition-bottom duration-300 ease-out  z-30 group-hover:bottom-[40%] ">
-                  <h2 className="text-2xl lg:text-5xl font-bold z-6 whitespace-nowrap uppercase text-[#F5F5F5] group-hover:opacity-70">
+                  <h2 className={`text-2xl lg:text-5xl font-bold z-6 whitespace-nowrap uppercase text-[#F5F5F5] group-hover:opacity-70 ${ubuntu.className}`}>
                     Food Shop
                   </h2>
                   <a href="https://food-shop-app-client.vercel.app/">
