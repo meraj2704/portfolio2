@@ -5,6 +5,7 @@ import { Provider } from "react-redux";
 import store from "@/redux/Store/store";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Navbar from "@/components/shared/Navbar";
+import Footer from "@/components/shared/Footer";
 
 // const inter = Inter({ subsets: ["latin"] });
 const ubuntu = Ubuntu({ subsets: ["latin"], weight: ["400", "700"] });
@@ -26,7 +27,7 @@ export default function RootLayout({
       {/* <Provider store={store}> */}
       {/* <QueryClientProvider client={queryClient}> */}
       <body className={`${ubuntu.className} bg-bg1`}>
-        <Navbar/>{children}</body>
+        <Navbar/>{children}<Footer/></body>
       {/* </QueryClientProvider> */}
       {/* </Provider> */}
     </html>
