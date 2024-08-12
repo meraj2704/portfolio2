@@ -25,9 +25,9 @@ const HeroCart = () => {
               src='https://i.ibb.co/hXZZFmD/IMG-9071-1.jpg'
               alt="merajImg"
               objectFit="cover"
-              width={950}
-              height={1000}
-              className="w-full h-full rounded-full"
+              width={100}
+              height={100}
+              className="w-full h-full rounded-full scale-x-[-1]"
             />
           </div>
         </div>
