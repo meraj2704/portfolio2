@@ -5,12 +5,12 @@ import BlogCart from "./BlogCart";
 
 const Blogs = () => {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto px-5 md:px-10 xl:px-0">
       <SectionTitleHeaderTag
         title="Blogs"
         content="My thoughts on technology and business, welcome to subscribe"
       />
-      <div className="w-full">
+      <div className="w-full border-t border-t-white mt-10">
         {
           blogData.map((data,index) => <BlogCart key={index} data={data}/>)
         }

@@ -35,7 +35,7 @@ const Navbar = () => {
           : "absolute bg-transparent"
       }`}
     >
-      <nav className="container mx-auto flex justify-between items-center py-3 xl:py-5 2xl:py-7 px-5 xl:px-10 2xl:px-0">
+      <nav className="container mx-auto px-5 md:px-10 xl:px-0 flex justify-between items-center py-3">
         <div className="flex gap-3">
           <p className="text-base md:text-2xl xl:text-3xl font-medium text-brand1">
             {"</>"}
