@@ -1,7 +1,16 @@
 import { IBM_Plex_Mono, Ubuntu } from "next/font/google";
 
-export const ubuntu = Ubuntu({subsets:['latin'], weight:['400','700']});
-export const ibm = IBM_Plex_Mono({subsets:['latin'], weight:['400','700']});
+// Configure the Ubuntu font with only the allowed weights
+export const ubuntu = Ubuntu({
+  subsets: ['latin'], 
+  weight: ['300', '400', '500', '700']  // Restrict to allowed weights
+});
+
+// Configure the IBM Plex Mono font with only the allowed weights
+export const ibm = IBM_Plex_Mono({
+  subsets: ['latin'], 
+  weight: ['300', '400', '500', '700']  // Restrict to allowed weights
+});
 
 export const skills =[
     {skillName:'Html'},
