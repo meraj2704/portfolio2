@@ -1,5 +1,16 @@
 const blog1 = '/assets/blog1.png'
 const blog2 = '/assets/react.jpg'
+
+export interface IBlog {
+    id:number;
+    title:string;
+    content:string;
+    topic:string;
+    author:string;
+    date:string;
+    bannerImage:string;
+    images:string[];
+}
 export const blogData = [
     {
         id:1,
@@ -8,7 +19,8 @@ export const blogData = [
         topic:"Web Development",
         author:"Meraj Hossain",
         date:"2022-01-20",
-        image:blog1
+        bannerImage:blog1,
+        images:[]
     },
     {
         id:2,
@@ -17,6 +29,7 @@ export const blogData = [
         topic: "React Development",
         author: "Meraj Hossain",
         date: "2022-01-20",
-        image: blog2, // Assuming blog2 is a valid URL or imported image path
+        bannerImage: blog2,
+        images:[]
     },
 ]

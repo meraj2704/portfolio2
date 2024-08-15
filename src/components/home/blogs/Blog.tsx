@@ -1,11 +1,11 @@
 import BlogCart from "@/components/blogs/BlogCart";
 import ButtonFill from "@/components/ui/ButtonFill";
 import SectionTitleHeaderTag from "@/components/ui/SectionTitleHeaderTag";
-import { blogData } from "@/constant/blogData";
+import { blogData, IBlog } from "@/constant/blogData";
 import React from "react";
 
 const Blog = () => {
-  const data = blogData[0];
+  const data:IBlog | undefined = blogData[0];
   return (
     <div className="container mx-auto px-5 md:px-10 xl:px-0 py-10">
       <SectionTitleHeaderTag

@@ -27,7 +27,7 @@ export default function RootLayout({
       {/* <Provider store={store}> */}
       {/* <QueryClientProvider client={queryClient}> */}
       <body className={`${ubuntu.className} bg-bg1`}>
-        <Navbar/>{children}<Footer/></body>
+        <Navbar/><div className="pt-16">{children}</div><Footer/></body>
       {/* </QueryClientProvider> */}
       {/* </Provider> */}
     </html>
