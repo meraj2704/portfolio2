@@ -10,7 +10,7 @@ const page = ({
   };
 }) => {
   const id = Number(params.id);
-  const data: IBlog | undefined = blogData.find((da) => da.id === id);
+  const data = blogData.find((da) => da.id === id);
   console.log(data);
   return (
     <div className="py-10 lg:py-20 w-[500px] md:w-[600px] lg:w-[700px] mx-auto px-5 md:px-10 xl:px-0">
@@ -35,8 +35,8 @@ const page = ({
       <div className="flex justify-center items-center py-10">
         <div className="w-full h-auto">
           <Image
-            src={data.bannerImage}
-            alt={data.title}
+            src={data?.bannerImage as string}
+            alt={data?.title || "Default Alt Text"}
             width={300}
             height={300}
             className="w-full h-full rounded-md"
@@ -53,9 +53,12 @@ const page = ({
         <p className={`text-white opacity-65 ${ibm.className}`}></p>
       </div>
       <div className="border-y border-grey  flex justify-between items-center px-5 mc:px-10 gap-4 py-4 mt-10">
-    
-        <button className="px-4 py-2 rounded-full bg-brand1 text-bg1 hover:scale-105">Previous</button>
-        <button className="px-4 py-2 rounded-full bg-brand1 text-bg1 hover:scale-105">Next</button>
+        <button className="px-4 py-2 rounded-full bg-brand1 text-bg1 hover:scale-105">
+          Previous
+        </button>
+        <button className="px-4 py-2 rounded-full bg-brand1 text-bg1 hover:scale-105">
+          Next
+        </button>
       </div>
     </div>
   );
