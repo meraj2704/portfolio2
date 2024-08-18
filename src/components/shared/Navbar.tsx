@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import ToggleSidebar from "./ToggleSidebar";
 
 const Navbar = () => {
   const [isScrolled, setScrolled] = useState(false);
@@ -26,9 +27,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <motion.div
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
+    <div
       className={`w-full top-0 z-50 transition-all duration-300 border-b-[1px] border-b-grey ${
         isScrolled
           ? "fixed bg-bg1 shadow-lg opacity-95"
@@ -36,19 +35,18 @@ const Navbar = () => {
       }`}
     >
       <nav className="container mx-auto px-5 md:px-10 xl:px-0 flex justify-between items-center py-3">
-        <div className="flex gap-3">
+        <div className="flex items-center gap-3">
           <p className="text-base md:text-2xl xl:text-3xl font-medium text-brand1">
             {"<M/>"}
           </p>
-          <motion.p
-            initial={{ y: -70 }}
-            animate={{ y: 0 }}
+          <p
+            
             className={`text-base md:text-2xl xl:text-3xl font-medium text-white ${ibm.className}`}
           >
             Meraj Hossain
-          </motion.p>
+          </p>
         </div>
-        <div className="flex gap-5">
+        <div className="hidden lg:flex gap-5">
           <Link href={`/`}>
             {" "}
             <p
@@ -86,6 +84,9 @@ const Navbar = () => {
             </p>
           </Link>
         </div>
+        <div className="block lg:hidden">
+          <ToggleSidebar />
+        </div>
         <div className="hidden xl:block">
           <div className="flex gap-5">
             <a href="">
@@ -100,7 +101,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-    </motion.div>
+    </div>
   );
 };
 
