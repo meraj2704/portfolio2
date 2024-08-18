@@ -3,7 +3,7 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Social = () => {
   return (
-    <div className="flex gap-5 pb-10">
+    <div className="flex gap-5">
       <a href="https://github.com/meraj2704" target="blank">
         <FaGithub className="text-xl text-brand1" />
       </a>
