@@ -20,7 +20,7 @@ const Contact = () => {
     console.log(data);
   };
   return (
-    <div className="w-full bg-bg2">
+    <div id="contact" className="w-full bg-bg2">
       <div className="container mx-auto px-5 md:px-10 xl:px-0 py-10">
         <SectionTitleHeaderTag
           title="Contact"

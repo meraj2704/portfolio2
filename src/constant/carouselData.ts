@@ -6,7 +6,7 @@ export const carouselData = [
   },
   {
     name:"Portfolio-Client",
-    image:"/images/client-portfolio.png",
+    image:"/assets/client-portfolio.png",
     link: "https://client-laniding-page-figma.vercel.app/",
   },{
     name:"POS Page",
@@ -25,7 +25,7 @@ export const carouselData = [
   },
   {
     name:"Modern Bank",
-    image: "/assets/modern-bank.png",
+    image: "/assets/hoo-bank.png",
     link: "https://hoobank-eight-kappa.vercel.app/",
   },
   {

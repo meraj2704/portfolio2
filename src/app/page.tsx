@@ -1,10 +1,14 @@
-import React from 'react';
-import Home from '@/components/home/Home';
+import React from "react";
+import Home from "@/components/home/Home";
+import MenuBar from "@/components/shared/MenuBar";
 
 const page = () => {
   return (
-    <div>
-      <Home/>
+    <div className="relative">
+      <Home />
+      <div>
+        <MenuBar />
+      </div>
     </div>
   );
 };

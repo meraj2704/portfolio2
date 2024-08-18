@@ -8,7 +8,7 @@ import OverView from "./OverView";
 import { motion } from "framer-motion";
 const Hero = () => {
   return (
-    <div className="w-full py-20 xl:py-28">
+    <div id="home" className="w-full py-20 xl:py-28">
       <div className="container mx-auto px-5 xl:px-10 2xl:px-0">
         <motion.h1
           initial={{}}
