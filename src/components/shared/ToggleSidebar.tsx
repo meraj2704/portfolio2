@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { MdClose, MdMenu } from "react-icons/md";
+import Social from "./Social";
 
 const ToggleSidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -82,17 +83,7 @@ const ToggleSidebar = () => {
             </Link>
           </div>
 
-          <div className="flex gap-5 pb-10">
-            <a href="">
-              <FaGithub className="text-xl text-brand1" />
-            </a>
-            <a href="">
-              <FaLinkedin className="text-xl text-brand1" />
-            </a>
-            <a href="">
-              <FaInstagram className="text-xl text-brand1" />
-            </a>
-          </div>
+          <Social />
         </div>
       </div>
     </div>

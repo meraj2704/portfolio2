@@ -2,6 +2,7 @@ import { ibm } from "@/constant/fontFamily";
 import React from "react";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaRegCopyright } from "react-icons/fa6";
+import Social from "./Social";
 
 const Footer = () => {
   return (
@@ -9,17 +10,7 @@ const Footer = () => {
       <hr />
       <div className="container mx-auto px-5 md:px-10 xl:px-0 flex flex-col xl:flex-row justify-between items-center gap-5 mt-5 ">
         <div className="block xl:hidden">
-          <div className="flex gap-5">
-            <a href="">
-              <FaGithub className="text-xl text-brand1" />
-            </a>
-            <a href="">
-              <FaLinkedin className="text-xl text-brand1" />
-            </a>
-            <a href="">
-              <FaInstagram className="text-xl text-brand1" />
-            </a>
-          </div>
+          <Social/>
         </div>
         <div className="flex lg:hidden gap-5 lg:gap-10 items-center">
           <p

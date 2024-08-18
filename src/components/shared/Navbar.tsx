@@ -7,6 +7,7 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import ToggleSidebar from "./ToggleSidebar";
+import Social from "./Social";
 
 const Navbar = () => {
   const [isScrolled, setScrolled] = useState(false);
@@ -88,17 +89,7 @@ const Navbar = () => {
           <ToggleSidebar />
         </div>
         <div className="hidden xl:block">
-          <div className="flex gap-5">
-            <a href="">
-              <FaGithub className="text-xl text-brand1" />
-            </a>
-            <a href="">
-              <FaLinkedin className="text-xl text-brand1" />
-            </a>
-            <a href="">
-              <FaInstagram className="text-xl text-brand1" />
-            </a>
-          </div>
+          <Social/>
         </div>
       </nav>
     </div>
