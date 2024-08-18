@@ -6,6 +6,8 @@ import { FcAbout } from "react-icons/fc";
 import { ImBlog } from "react-icons/im";
 import { MdOutlineConnectWithoutContact } from "react-icons/md";
 import { GiSkills } from "react-icons/gi";
+import { AiOutlineExclamationCircle } from "react-icons/ai";
+
 
 const MenuBar = () => {
   const [path, setPath] = useState("home");
@@ -19,7 +21,7 @@ const MenuBar = () => {
   };
 
   return (
-    <div className="fixed left-5 top-1/2 transform -translate-y-1/2 w-10 h-96 flex flex-col items-center rounded-full border border-white bg-bg2">
+    <div className="fixed px-2 bottom-6 lg:left-5 right-1/2 lg:top-1/2 transform translate-x-1/2 lg:-translate-y-1/2 w-80 lg:w-12 h-12 lg:h-96 flex flex-row lg:flex-col justify-between items-center rounded-full border border-white bg-bg2">
       <div
         onClick={() => handleScroll("home", "home")}
         className={`my-4 p-2 rounded-full ${
@@ -34,7 +36,7 @@ const MenuBar = () => {
           path === "about" ? "bg-brand1 text-bg2" : "transparent text-white"
         }`}
       >
-        <FcAbout />
+        <AiOutlineExclamationCircle />
       </div>
       <div
         onClick={() => handleScroll("skills", "skills")}
