@@ -1,6 +1,7 @@
 import React from "react";
 import ProjectFilter from "./ProjectFilter";
 import SectionTitleHeaderTag from "../ui/SectionTitleHeaderTag";
+import Showcase from "./Showcase";
 
 const Projects = () => {
   return (
@@ -11,6 +12,7 @@ const Projects = () => {
           content="I am striving to never stop learning and improving"
         />
         <ProjectFilter />
+        <Showcase/>
       </div>
     </div>
   );

@@ -15,7 +15,7 @@ interface ProjectCartI {
 
 const ProjectCart = ({ item }: ProjectCartI) => {
   return (
-    <div className="w-full border rounded-md border-gray-500 bg-bg2">
+    <div className="w-full border rounded-md border-grey bg-bg2">
       <div className="w-full h-52 md:h-72 group cursor-pointer relative text-white">
         <Image
           src={item.image}
@@ -24,18 +24,10 @@ const ProjectCart = ({ item }: ProjectCartI) => {
           alt="Project cart image"
           className="absolute rounded-md w-full h-full object-cover top-0 left-0 transition-opacity duration-300 ease-out"
         />
-        <div className="absolute w-full h-full rounded-md bg-black opacity-0 z-10 transition-opacity duration-200 ease-out group-hover:opacity-60"></div>
-        <div className="flex flex-col justify-center items-center absolute bottom-[-100px] left-[50%] translate-x-[calc(-50%)] transition-bottom duration-300 ease-out  z-30 group-hover:bottom-[40%] ">
-          <h2
-            className={`text-2xl lg:text-5xl font-bold z-6 whitespace-nowrap uppercase text-[#F5F5F5] group-hover:opacity-70 ${ubuntu.className}`}
-          >
-            {item.name}
-          </h2>
-          <a href={item.link} target="blank">
-            <h2 className="text-base lg:text-xl z-6 whitespace-nowrap text-[#F5F5F5] mt-5 underline text-brand1">
-              Visit
-            </h2>
-          </a>
+        <div className="absolute bottom-0 w-full ">
+          <div className="hidden group-hover:flex justify-center items-center h-12 w-full bg-bg2 rounded-b-md transition-opacity duration-200 ease-out group-hover:opacity-80">
+            <h1 className="text-xl font-semibold text-brand1">{item.name}</h1>
+          </div>
         </div>
       </div>
     </div>

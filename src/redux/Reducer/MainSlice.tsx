@@ -3,11 +3,13 @@ import { createSlice } from "@reduxjs/toolkit";
 interface MainState {
   add: boolean;
   projectKeys: string[];
+  projects:any[];
 }
 
 const initialState: MainState = {
   add: false,
   projectKeys: [],
+  projects: [],
 };
 
 export const MainSlice = createSlice({
@@ -26,10 +28,13 @@ export const MainSlice = createSlice({
         state.projectKeys.splice(existIndex, 1);
       }
     },
+    handleProjectFilter: (state,action) => {
+      state.projects = action.payload;
+    }
   },
 });
 
-export const { handleAddModalOpen, handleProjectKey } = MainSlice.actions;
+export const { handleAddModalOpen, handleProjectKey, handleProjectFilter } = MainSlice.actions;
 
 export default MainSlice.reducer;
 
