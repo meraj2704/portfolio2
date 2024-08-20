@@ -1,10 +1,9 @@
 import React from "react";
 
-
 import { ProjectsCarousel } from "./ProjectsCarousel";
 import SectionTitleHeaderTag from "@/components/ui/SectionTitleHeaderTag";
 import ButtonFill from "@/components/ui/ButtonFill";
-
+import Link from "next/link";
 
 const Works = () => {
   const aboutBgImage = "/assets/about-bg.jpg";
@@ -24,7 +23,7 @@ const Works = () => {
         <ProjectsCarousel />
       </div>
       <div className="flex justify-center items-center mt-10">
-        <ButtonFill content="See All" />
+        <Link href='/projects'><ButtonFill content="See All" /></Link>
       </div>
     </div>
   );

@@ -15,7 +15,7 @@ interface ProjectCartI {
 
 const ProjectCart = ({ item }: ProjectCartI) => {
   return (
-    <div className="w-full border rounded-md border-grey bg-bg2">
+    <div className="w-full border rounded-md border-grey bg-bg2 cursor-pointer">
       <div className="w-full h-52 md:h-72 group cursor-pointer relative text-white">
         <Image
           src={item.image}
