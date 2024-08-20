@@ -5,6 +5,8 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import ProjectCart from "./ProjectCart";
 
+
+
 const Showcase = () => {
   const projects = useSelector((state: RootState) => state.Initial.projects);
 
@@ -13,6 +15,7 @@ const Showcase = () => {
       {projects.map((project, index) => (
         <div key={index} className="col-span-1 w-full">
           <ProjectCart item={project} />
+          
         </div>
       ))}
     </div>
