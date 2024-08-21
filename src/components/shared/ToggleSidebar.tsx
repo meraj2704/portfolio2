@@ -55,19 +55,7 @@ const ToggleSidebar = () => {
                 Home
               </p>
             </Link>
-            <Link href={`/blogs`}>
-              {" "}
-              <p
-                onClick={toggleSidebar}
-                className={`text-base md:text-2xl font-light cursor-pointer ${
-                  pathName.includes("/blogs")
-                    ? "text-brand1"
-                    : "text-white hover:text-brand1"
-                } ${ibm.className}`}
-              >
-                Blogs
-              </p>
-            </Link>
+
             <Link href={`/projects`}>
               {" "}
               <p
@@ -79,6 +67,20 @@ const ToggleSidebar = () => {
                 } ${ibm.className}`}
               >
                 Projects
+              </p>
+            </Link>
+
+            <Link href={`/blogs`}>
+              {" "}
+              <p
+                onClick={toggleSidebar}
+                className={`text-base md:text-2xl font-light cursor-pointer ${
+                  pathName.includes("/blogs")
+                    ? "text-brand1"
+                    : "text-white hover:text-brand1"
+                } ${ibm.className}`}
+              >
+                Blogs
               </p>
             </Link>
           </div>

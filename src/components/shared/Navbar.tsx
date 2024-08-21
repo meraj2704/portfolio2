@@ -6,6 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import ToggleSidebar from "./ToggleSidebar";
 import Social from "./Social";
+import MSign from "./MSign";
 
 const Navbar = () => {
   const [isScrolled, setScrolled] = useState(false);
@@ -34,9 +35,7 @@ const Navbar = () => {
     >
       <nav className="container mx-auto px-5 2xl:px-0 flex justify-between items-center py-3">
         <div className="flex items-center gap-3">
-          <p className="text-base md:text-2xl xl:text-3xl font-medium text-brand1">
-            {"<M/>"}
-          </p>
+          <MSign/>
           <p
             className={`text-base md:text-2xl xl:text-3xl font-medium text-white ${ibm.className}`}
           >
