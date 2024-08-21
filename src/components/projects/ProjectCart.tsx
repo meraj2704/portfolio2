@@ -1,6 +1,5 @@
-import { ubuntu } from "@/constant/fontFamily";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Dialog,
   DialogContent,
@@ -23,6 +22,20 @@ interface ProjectCartI {
 }
 
 const ProjectCart = ({ item }: ProjectCartI) => {
+  const [isScrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div className="w-full border rounded-md border-grey bg-bg2 cur">
       <Dialog>
@@ -44,46 +57,71 @@ const ProjectCart = ({ item }: ProjectCartI) => {
             </div>
           </div>
         </DialogTrigger>
-        <DialogContent>
+        <DialogContent className="max-h-screen">
           <DialogHeader>
             <DialogTitle></DialogTitle>
-            <div className="bg-white w-full h-full rounded-t-lg">
-              <DialogDescription>
-                <div className="max-w-5xl mx-auto mt-10 lg:mt-20">
-                  <div className="w-full flex justify-between items-center px-5 lg:px-0">
-                    <h1 className="text-3xl font-semibold text-bg2">
+            <div
+              style={{ height: "calc(100vh - 5rem)" }}
+              className="bg-white w-full overflow-y-scroll rounded-t-lg pb-20"
+            >
+              <div className="max-w-5xl mx-auto ">
+                <div
+                  className={`w-full z-50 fixed
+                     px-5 lg:px-0 bg-white py-5 lg:py-10`}
+                >
+                  <div className="max-w-5xl flex justify-between items-center">
+                    <h1 className="text-2xl lg:text-3xl font-semibold text-bg2">
                       {item.name}
                     </h1>
-                    <Link href={item.link}>
+                    <a href={item.link} target="blank">
                       <button className="px-4 py-2 w-28 text-white bg-bg2 rounded-full hover:scale-105">
                         Live
                       </button>
-                    </Link>
+                    </a>
                   </div>
-                  <div className="w-full h-[300px] md:h-[400px] lg:h-[600px] mt-10 lg:mt-16">
-                    <Image src={item.image} alt={item.name} width={1024} height={600} /> 
+                </div>
+                <div className="pt-32">
+                  <div className="w-full h-[300px] md:h-[400px] lg:h-[600px]">
+                    <Image
+                      src={item.image}
+                      alt={item.name}
+                      width={1024}
+                      height={600}
+                    />
                   </div>
                   <div className="w-full items-center px-5 lg:px-0">
-                    <div className="flex gap-5">
+                    <div className="flex flex-col items-start">
                       <h2 className="text-xl font-bold text-bg2">
                         Tools Used :
                       </h2>
-                      <ul className="flex justify-start items-center gap-1">
+                      <div className=" flex flex-col justify-start items-start pl-5">
                         {item.tools.map((tool, index) => (
-                          <li key={index} className="text-base font-thin text-bg2">
+                          <li
+                            key={index}
+                            className="text-base font-thin text-bg2"
+                          >
                             {tool},
                           </li>
                         ))}
-                      </ul>
+                      </div>
+                    </div>
+                    <div className="flex flex-col items-start mt-4">
+                      <h2 className="text-xl font-bold text-bg2">
+                        Project details :
+                      </h2>
+                      <p className="text-start text-base text-bg2">
+                        {item.details}
+                      </p>
                     </div>
                     <div className="max-h-48 overflow-y-auto mt-4">
                       <p className="text-base text-bg2">
-                        <span className="text-xl font-bold">Details :</span> {item.details}
+                        <span className="text-xl font-bold">Details :</span>{" "}
+                        {item.details}
                       </p>
                     </div>
                   </div>
                 </div>
-              </DialogDescription>
+              </div>
             </div>
           </DialogHeader>
         </DialogContent>

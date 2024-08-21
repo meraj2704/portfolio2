@@ -2,8 +2,6 @@
 
 import { ibm } from "@/constant/fontFamily";
 import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import ToggleSidebar from "./ToggleSidebar";
@@ -20,7 +18,6 @@ const Navbar = () => {
         setScrolled(false);
       }
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -41,7 +38,6 @@ const Navbar = () => {
             {"<M/>"}
           </p>
           <p
-            
             className={`text-base md:text-2xl xl:text-3xl font-medium text-white ${ibm.className}`}
           >
             Meraj Hossain
@@ -60,18 +56,6 @@ const Navbar = () => {
               Home
             </p>
           </Link>
-          <Link href={`/blogs`}>
-            {" "}
-            <p
-              className={`text-base md:text-2xl font-light cursor-pointer ${
-                pathName.includes("/blogs")
-                  ? "text-brand1"
-                  : "text-white hover:text-brand1"
-              } ${ibm.className}`}
-            >
-              Blogs
-            </p>
-          </Link>
           <Link href={`/projects`}>
             {" "}
             <p
@@ -84,12 +68,24 @@ const Navbar = () => {
               Projects
             </p>
           </Link>
+          <Link href={`/blogs`}>
+            {" "}
+            <p
+              className={`text-base md:text-2xl font-light cursor-pointer ${
+                pathName.includes("/blogs")
+                  ? "text-brand1"
+                  : "text-white hover:text-brand1"
+              } ${ibm.className}`}
+            >
+              Blogs
+            </p>
+          </Link>
         </div>
         <div className="block lg:hidden">
           <ToggleSidebar />
         </div>
         <div className="hidden xl:block">
-          <Social/>
+          <Social />
         </div>
       </nav>
     </div>
