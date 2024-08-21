@@ -13,7 +13,7 @@ const page = ({
   const data = blogData.find((da) => da.id === id);
   console.log(data);
   return (
-    <div className="py-10 lg:py-20 w-[500px] md:w-[600px] lg:w-[700px] mx-auto px-5 md:px-10 xl:px-0">
+    <div className="py-10 lg:py-20 w-[500px] md:w-[600px] lg:w-[700px] mx-auto px-5  xl:px-0">
       <div className="py-4">
         <h1
           className={`text-2xl lg:text-4xl font-bold text-brand1 ${ubuntu.className}`}

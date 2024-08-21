@@ -20,11 +20,10 @@ const OverView = () => {
           </p>
         </div>
         <div className="flex justify-between items-center gap-4">
-          <h1 className="text-5xl text-brand1">3</h1>
+          <h1 className="text-5xl text-brand1">16+</h1>
           <p className="text-base text-white">
-            Development <br />
-            Tools
-          </p>
+            Project <br />
+            Complete </p>
         </div>
         <div className="flex justify-between items-center gap-4">
           <h1 className="text-5xl text-brand1">1</h1>

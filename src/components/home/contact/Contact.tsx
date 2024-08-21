@@ -21,7 +21,7 @@ const Contact = () => {
   };
   return (
     <div id="contact" className="w-full bg-bg2">
-      <div className="container mx-auto px-5 md:px-10 xl:px-0 py-10">
+      <div className="container mx-auto px-5  2xl:px-0 py-10">
         <SectionTitleHeaderTag
           title="Contact"
           content="I’m currently available for freelance work"

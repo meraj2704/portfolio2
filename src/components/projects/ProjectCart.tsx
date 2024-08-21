@@ -9,6 +9,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import Link from "next/link";
+import ProfileContact from "./ProfileContact";
 
 interface ItemI {
   name: string;
@@ -66,13 +67,15 @@ const ProjectCart = ({ item }: ProjectCartI) => {
             >
               <div className="max-w-5xl mx-auto ">
                 <div
-                  className={`w-full z-50 fixed
-                     px-5 lg:px-0 bg-white py-5 lg:py-10`}
+                  className={`w-full max-w-5xl z-50 fixed px-5 xl:px-0 bg-white py-5 lg:py-10`}
                 >
                   <div className="max-w-5xl flex justify-between items-center">
-                    <h1 className="text-2xl lg:text-3xl font-semibold text-bg2">
-                      {item.name}
-                    </h1>
+                    <div className="flex flex-col justify-start items-start space-y-4">
+                      <h1 className="text-2xl lg:text-3xl font-semibold text-bg2">
+                        {item.name}
+                      </h1>
+                      <ProfileContact/>
+                    </div>
                     <a href={item.link} target="blank">
                       <button className="px-4 py-2 w-28 text-white bg-bg2 rounded-full hover:scale-105">
                         Live
@@ -80,16 +83,17 @@ const ProjectCart = ({ item }: ProjectCartI) => {
                     </a>
                   </div>
                 </div>
-                <div className="pt-32">
-                  <div className="w-full h-[300px] md:h-[400px] lg:h-[600px]">
+                <div className="pt-36 lg:pt-48">
+                  <div className="w-full h-[220px] md:h-[350px] lg:h-[500px]">
                     <Image
                       src={item.image}
                       alt={item.name}
                       width={1024}
                       height={600}
+                      className="w-full h-full"
                     />
                   </div>
-                  <div className="w-full items-center px-5 lg:px-0">
+                  <div className="w-full items-center mt-10 px-5 xl:px-0">
                     <div className="flex flex-col items-start">
                       <h2 className="text-xl font-bold text-bg2">
                         Tools Used :
@@ -100,7 +104,7 @@ const ProjectCart = ({ item }: ProjectCartI) => {
                             key={index}
                             className="text-base font-thin text-bg2"
                           >
-                            {tool},
+                            {tool}
                           </li>
                         ))}
                       </div>
@@ -113,13 +117,8 @@ const ProjectCart = ({ item }: ProjectCartI) => {
                         {item.details}
                       </p>
                     </div>
-                    <div className="max-h-48 overflow-y-auto mt-4">
-                      <p className="text-base text-bg2">
-                        <span className="text-xl font-bold">Details :</span>{" "}
-                        {item.details}
-                      </p>
-                    </div>
                   </div>
+                  <hr className="my-10" />
                 </div>
               </div>
             </div>
