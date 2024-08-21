@@ -1,5 +1,5 @@
+'use client'
 import * as React from "react";
-
 import {
   Carousel,
   CarouselContent,
@@ -10,14 +10,17 @@ import {
 import Image from "next/image";
 import { ubuntu } from "@/constant/fontFamily";
 import { carouselData } from "@/constant/carouselData";
+import ProjectCart from "@/components/projects/ProjectCart";
+import { projectData } from "@/constant/projectData";
+import Autoplay from "embla-carousel-autoplay"
 
 export function ProjectsCarousel() {
   return (
-    <Carousel opts={{ loop: true }} className="w-full max-w-xs md:max-w-xl">
+    <Carousel opts={{ loop: true }} plugins={[Autoplay({delay:1500})]} className="w-full max-w-xs md:max-w-xl">
       <CarouselContent>
-        {carouselData.map((item, index) => (
+        {projectData.map((item, index) => (
           <CarouselItem key={index}>
-            <div className="w-full border rounded-md border-gray-500 bg-bg2">
+            {/* <div className="w-full border rounded-md border-gray-500 bg-bg2">
               <div className="w-full h-52 md:h-72 group cursor-pointer relative text-white">
                 <Image
                   src={item.image}
@@ -40,7 +43,8 @@ export function ProjectsCarousel() {
                   </a>
                 </div>
               </div>
-            </div>
+            </div> */}
+            <ProjectCart item={item}/>
           </CarouselItem>
         ))}
       </CarouselContent>

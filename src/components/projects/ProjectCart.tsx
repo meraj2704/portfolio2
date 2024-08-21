@@ -23,20 +23,6 @@ interface ProjectCartI {
 }
 
 const ProjectCart = ({ item }: ProjectCartI) => {
-  const [isScrolled, setScrolled] = useState(false);
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
   return (
     <div className="w-full border rounded-md border-grey bg-bg2 cur">
       <Dialog>
