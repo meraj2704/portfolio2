@@ -1,11 +1,14 @@
+'use client'
 import { useState, useRef, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
-import * as random from "maath/random"; // Corrected import path for TypeScript
+import * as random from "maath/random";
+import { Group } from 'three';
+ // Corrected import path for TypeScript
 
 const Stars: React.FC = (props) => {
-  const ref = useRef<THREE.Group>(null); // Specifying the ref type for a three.js Group
-  const [sphere] = useState<Float32Array>(() => random.inSphere(new Float32Array(5000), { radius: 1.2 }));
+  const ref = useRef<any>(null); // Specifying the ref type for a three.js Group
+  const [sphere] = useState<any>(() => random.inSphere(new Float32Array(5000), { radius: 1.2 }));
 
   useFrame((state, delta) => {
     if (ref.current) {

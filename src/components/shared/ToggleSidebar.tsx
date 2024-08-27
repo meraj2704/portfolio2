@@ -3,7 +3,6 @@ import { ibm } from "@/constant/fontFamily";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { MdClose, MdMenu } from "react-icons/md";
 import Social from "./Social";
 
