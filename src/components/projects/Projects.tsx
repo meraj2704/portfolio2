@@ -5,7 +5,7 @@ import Showcase from "./Showcase";
 
 const Projects = () => {
   return (
-    <div className="w-full bg-bg1 py-20">
+    <div className="w-full py-20">
       <div className="container mx-auto px-5  2xl:px-0">
         <SectionTitleHeaderTag
           title="Showcase"

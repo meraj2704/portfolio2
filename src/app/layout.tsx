@@ -7,6 +7,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import ReduxProvider from "./ReduxProvider";
+import StarsCanvas from "@/components/test/StarCanvas";
 
 // const inter = Inter({ subsets: ["latin"] });
 const ubuntu = Ubuntu({ subsets: ["latin"], weight: ["400", "700"] });
@@ -28,6 +29,7 @@ export default function RootLayout({
       <ReduxProvider>
       {/* <QueryClientProvider client={queryClient}> */}
       <body className={`${ubuntu.className} bg-bg1`}>
+        <StarsCanvas/>
         <Navbar/><div className="pt-16">{children}</div><Footer/></body>
       {/* </QueryClientProvider> */}
       </ReduxProvider>
