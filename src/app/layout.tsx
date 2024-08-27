@@ -29,7 +29,9 @@ export default function RootLayout({
       <ReduxProvider>
       {/* <QueryClientProvider client={queryClient}> */}
       <body className={`${ubuntu.className} bg-bg1`}>
+        <div className="fixed left-0 right-0 top-0 bottom-0">
         <StarsCanvas/>
+        </div>
         <Navbar/><div className="pt-16">{children}</div><Footer/></body>
       {/* </QueryClientProvider> */}
       </ReduxProvider>

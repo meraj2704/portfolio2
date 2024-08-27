@@ -47,25 +47,25 @@ export function SkillsTab() {
           </div>
         </TabsTrigger>
       </TabsList>
-      <TabsContent value="front" className="mt-10 xl:mt-20 px-5 ">
+      <TabsContent value="front" className="mt-16 xl:mt-28 px-5 ">
         <h1
           className={`text-xl md:text-3xl xl:text-5xl text-white mb-10 text-center ${ibm.className}`}
         >
           Front-End Skills
         </h1>
-        <div className=" grid grid-cols-4 gap-5 md:gap-10">
+        <div className="pt-10 grid grid-cols-4 gap-10 md:gap-16">
           {frontSkills.map((skill, index) => (
             <SkillCart key={index} skill={skill} />
           ))}
         </div>
       </TabsContent>
-      <TabsContent value="backend" className="mt-10 xl:mt-20 px-5 ">
+      <TabsContent value="backend" className="mt-16 xl:mt-28 px-5 ">
         <h1
           className={`text-xl md:text-3xl xl:text-5xl text-white mb-10 text-center ${ibm.className}`}
         >
           Backend-End Skills
         </h1>
-        <div className=" grid grid-cols-4 gap-5 md:gap-10">
+        <div className="pt-10 grid grid-cols-4 gap-10 md:gap-16">
           {backendSkills.map((skill, index) => (
             <SkillCart key={index} skill={skill} />
           ))}

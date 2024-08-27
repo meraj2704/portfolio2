@@ -21,7 +21,7 @@ const MenuBar = () => {
   };
 
   return (
-    <div className="fixed px-2 bottom-6 lg:left-5 right-1/2 lg:top-1/2 transform translate-x-1/2 lg:-translate-y-1/2 w-80 lg:w-16 h-12 lg:h-96 flex flex-row lg:flex-col justify-between items-center rounded-full border border-white bg-bg2">
+    <div className="fixed px-2 bottom-6 right-1/2  transform translate-x-1/2 w-80  h-12 flex flex-row justify-between items-center rounded-full border border-white bg-bg2">
       <div
         onClick={() => handleScroll("home", "home")}
         className={`my-4 p-2 rounded-full ${

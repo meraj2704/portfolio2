@@ -10,8 +10,8 @@ const Works = () => {
   return (
     <div
       id="works"
-      className="w-full  bg-cover bg-center py-10"
-      style={{ backgroundImage: `url(${aboutBgImage})` }}
+      className="w-full py-10"
+      // style={{ backgroundImage: `url(${aboutBgImage})` }}
     >
       <div className="container mx-auto px-5  2xl:px-0 flex flex-col justify-center items-center xl:space-y-20">
         <SectionTitleHeaderTag
