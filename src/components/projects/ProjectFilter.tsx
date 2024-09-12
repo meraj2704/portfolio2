@@ -45,7 +45,7 @@ const ProjectFilter = () => {
         <button
           key={tech}
           onClick={() => handleSetKeys(tech)}
-          className={`w-28 px-4 py-2 rounded shadow z-[100] ${
+          className={`w-28 px-4 py-2 rounded shadow z-[50] ${
             keys.includes(tech) ? "bg-brand1 text-bg2" : "bg-grey text-white"
           }`}
         >
