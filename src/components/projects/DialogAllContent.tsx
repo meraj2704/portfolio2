@@ -26,7 +26,7 @@ const DialogAllContent = ({ item }: ProjectCartI) => {
     >
       <div className="max-w-5xl mx-auto ">
         <div
-          className={`w-full max-w-5xl z-50 fixed px-5 xl:px-0 bg-white py-5 lg:py-10`}
+          className={`w-full max-w-5xl z-50 fixed px-5 xl:px-0 bg-white py-5 lg:pt-8`}
         >
           <div className="max-w-5xl flex justify-between items-center">
             <div className="flex flex-col justify-start items-start space-y-4">
@@ -42,13 +42,13 @@ const DialogAllContent = ({ item }: ProjectCartI) => {
             </a>
           </div>
         </div>
-        <div className="pt-36 lg:pt-48">
+        <div className="pt-40">
           <div className="w-full h-[220px] md:h-[350px] lg:h-[500px]">
             <Image
               src={item.image}
               alt={item.name}
-              width={1024}
-              height={600}
+              width={700}
+              height={400}
               className="w-full h-full"
             />
           </div>

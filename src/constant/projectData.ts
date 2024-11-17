@@ -1,71 +1,165 @@
 export const projectData = [
   {
+    name: "BTDDC",
+    image: "/assets/bttdc/bttdc1.png",
+    link: "https://bttdc-education.vercel.app/",
+    details:
+      "Developed a professional and responsive website for BTDDC, an educational institute in Bangladesh. The platform highlights the institute's offerings, achievements, and academic programs, providing an intuitive user experience. Built using React for dynamic and interactive components, Tailwind CSS for modern styling, and ShadCN for UI components. Integrated React Hook Form for efficient and user-friendly form handling, ensuring smooth functionality for inquiries and student submissions.",
+    tools: ["JavaScript", "React", "Tailwind CSS", "ShadCN", "React Hook Form"],
+    subImages: [
+      "/assets/bttdc/bttdc1.png",
+      "/assets/bttdc/bttdc2.png",
+      "/assets/bttdc/bttdc3.png",
+      "/assets/bttdc/bttdc4.png",
+      "/assets/bttdc/bttdc5.png",
+      "/assets/bttdc/bttdc6.png",
+      "/assets/bttdc/bttdc7.png",
+      "/assets/bttdc/bttdc8.png",
+      "/assets/bttdc/bttdc9.png",
+      "/assets/bttdc/bttdc10.png",
+      "/assets/bttdc/bttdc11.png",
+      "/assets/bttdc/bttdc12.png",
+      "/assets/bttdc/bttdc13.png",
+      "/assets/bttdc/bttdc14.png",
+      "/assets/bttdc/bttdc15.png",
+    ],
+  },
+  {
+    name: "Doctor Prescription",
+    image: "/assets/doctor-prescription/prescription1.png",
+    link: "https://doctor-rx-plum.vercel.app/prescription",
+    details:
+      "Designed and developed a single-page web application for doctors to create and print prescriptions effortlessly. The application enables doctors to set patient complaints, investigations, prescribed medicines, and additional notes in one streamlined interface. Built using Next.js for optimized performance and responsiveness, Redux for efficient state management, and Tailwind CSS for a modern, responsive design. The print-ready prescription feature enhances usability and minimizes effort.",
+    tools: ["TypeScript", "Next.js", "Tailwind CSS", "Redux"],
+    subImages: [
+      "/assets/doctor-prescription/prescription1.png",
+      "/assets/doctor-prescription/prescription2.png",
+      "/assets/doctor-prescription/prescription3.png",
+      "/assets/doctor-prescription/prescription4.png",
+      "/assets/doctor-prescription/prescription5.png",
+    ],
+  },
+  {
     name: "Law Firm",
-    image: "/assets/law-firm.png",
+    image: "/assets/law-firm/law-firm1.png",
     link: "https://lawfirm-main.vercel.app/",
     details:
       "Developed a responsive and visually appealing portfolio website for a law firm. The site showcases the firm's services, team, and case studies, providing an elegant user experience. Leveraged Next.js for server-side rendering and fast page loads, while Tailwind CSS ensured a sleek, modern design. The website is optimized for performance and accessibility, ensuring a seamless experience across all devices.",
     tools: ["JavaScript", "Next.js", "Tailwind"],
-    subImages:["/assets/law-firm.png","/assets/law-firm.png","/assets/law-firm.png","/assets/law-firm.png","/assets/law-firm.png","/assets/law-firm.png",]
+    subImages: [
+      "/assets/law-firm/law-firm1.png",
+      "/assets/law-firm/law-firm2.png",
+      "/assets/law-firm/law-firm3.png",
+      "/assets/law-firm/law-firm4.png",
+      "/assets/law-firm/law-firm5.png",
+      "/assets/law-firm/law-firm6.png",
+      "/assets/law-firm/law-firm7.png",
+      "/assets/law-firm/law-firm8.png",
+    ],
   },
   {
     name: "Portfolio-Client",
-    image: "/assets/client-portfolio.png",
+    image: "/assets/up/up1.png",
     link: "https://client-laniding-page-figma.vercel.app/",
     details:
       "Crafted a sleek and modern one-page portfolio for a Ukrainian client, emphasizing clean design and effective content presentation. The project utilized HTML for structure and Tailwind CSS for styling, creating a responsive layout that adapts seamlessly to different screen sizes. The portfolio effectively highlights the client's personal brand, skills, and projects, ensuring a professional and visually engaging online presence.",
     tools: ["HTML", "Tailwind"],
-    subImages:["/assets/client-portfolio.png","/assets/client-portfolio.png","/assets/client-portfolio.png","/assets/client-portfolio.png","/assets/client-portfolio.png",]
+    subImages: [
+      "/assets/up/up1.png",
+      "/assets/up/up2.png",
+      "/assets/up/up3.png",
+      "/assets/up/up4.png",
+      "/assets/up/up5.png",
+      "/assets/up/up6.png",
+      "/assets/up/up7.png",
+      "/assets/up/up8.png",
+    ],
   },
   {
     name: "POS Page",
-    image: "/assets/pos-page.png",
+    image: "/assets/pos-page/pos-page1.png",
     link: "https://uw-pos-page.vercel.app/",
     details:
       "Developed a dynamic one-page CMS for a client, featuring comprehensive product management capabilities. The project includes functionality for adding and removing products, as well as a streamlined checkout process within a page named POS. Built with React for interactive UI components and Tailwind CSS for modern, responsive design, the CMS offers a user-friendly experience with efficient content management and product handling.",
     tools: ["React", "Tailwind"],
-    subImages:["/assets/pos-page.png","/assets/pos-page.png","/assets/pos-page.png","/assets/pos-page.png","/assets/pos-page.png",]
+    subImages: [
+      "/assets/pos-page/pos-page1.png",
+      "/assets/pos-page/pos-page2.png",
+      "/assets/pos-page/pos-page3.png",
+      "/assets/pos-page/pos-page4.png",
+      "/assets/pos-page/pos-page5.png",
+      "/assets/pos-page/pos-page6.png",
+    ],
   },
   {
     name: "Restaurant",
-    image: "/assets/restaurant.png",
+    image: "/assets/restaurant/restaurant1.png",
     link: "https://restaurant-lemon-pi.vercel.app/",
     details:
       "Created a visually stunning and user-friendly restaurant landing page as a theme project. The design emphasizes a modern and inviting aesthetic, with a focus on showcasing the restaurant's menu, special offers, and atmosphere. Built using React.js for dynamic content and Tailwind CSS for responsive styling, the landing page delivers a seamless browsing experience on all devices. The theme is designed to capture the essence of the restaurant's brand and entice potential customers.",
     tools: ["React", "JavaScript"],
-    subImages:["/assets/restaurant.png","/assets/restaurant.png","/assets/restaurant.png","/assets/restaurant.png","/assets/restaurant.png","/assets/restaurant.png",]
+    subImages: [
+      "/assets/restaurant/restaurant1.png",
+      "/assets/restaurant/restaurant2.png",
+      "/assets/restaurant/restaurant3.png",
+      "/assets/restaurant/restaurant4.png",
+      "/assets/restaurant/restaurant5.png",
+      "/assets/restaurant/restaurant6.png",
+    ],
   },
   {
     name: "GPT3",
-    image: "/assets/gpt3.png",
-    link: "https://gpt3-client.vercel.app/",
+    image: "/assets/gpt/gpt1.png",
+    link: "https://gpt3-opal-theta.vercel.app/",
     details:
       "Developed an engaging and responsive landing page for a restaurant as a theme project. This landing page showcases the restaurant's menu, special promotions, and ambiance with a modern design that appeals to potential customers. Utilizing React.js for interactive components and Tailwind CSS for a clean, responsive layout, the page ensures a smooth user experience across all devices. The project captures the restaurant's brand identity and effectively draws in visitors.",
     tools: ["JavaScript", "React"],
-    subImages:["/assets/gpt3.png","/assets/gpt3.png","/assets/gpt3.png","/assets/gpt3.png","/assets/gpt3.png","/assets/gpt3.png",]
+    subImages: [
+      "/assets/gpt/gpt1.png",
+      "/assets/gpt/gpt2.png",
+      "/assets/gpt/gpt3.png",
+      "/assets/gpt/gpt4.png",
+      "/assets/gpt/gpt5.png",
+      "/assets/gpt/gpt6.png",
+    ],
   },
   {
     name: "Modern Bank",
-    image: "/assets/hoo-bank.png",
+    image: "/assets/hoo-bank/hoo-bank1.png",
     link: "https://hoobank-eight-kappa.vercel.app/",
     details:
       "Designed and developed a sleek, modern landing page for a bank as a theme project. The page features key financial services, customer testimonials, and a secure user interface that reflects the bank's commitment to innovation and trust. Built with React.js for dynamic interactions and Tailwind CSS for a responsive and professional design, the landing page offers a seamless and intuitive experience for users across all devices.",
     tools: ["React", "JavaScript", "Tailwind"],
-    subImages:["/assets/hoo-bank.png","/assets/hoo-bank.png","/assets/hoo-bank.png","/assets/hoo-bank.png","/assets/hoo-bank.png","/assets/hoo-bank.png",]
+    subImages: [
+      "/assets/hoo-bank/hoo-bank1.png",
+      "/assets/hoo-bank/hoo-bank2.png",
+      "/assets/hoo-bank/hoo-bank3.png",
+      "/assets/hoo-bank/hoo-bank4.png",
+      "/assets/hoo-bank/hoo-bank5.png",
+      "/assets/hoo-bank/hoo-bank6.png",
+    ],
   },
   {
     name: "Health Care",
     image: "/assets/health-care.png",
     link: "https://health-care-client-phi.vercel.app/",
-    details: "Developed a comprehensive healthcare management website that enables users to track and manage their health data. The platform allows users to upload sugar levels, oxygen levels, regular medicines, and medical reports. It also features a notification system that alerts users if any health metrics indicate potential issues. Additionally, the website provides BMI reports, helping users monitor their overall health status. The project is designed to be user-friendly, secure, and responsive, ensuring accessibility across devices.",
+    details:
+      "Developed a comprehensive healthcare management website that enables users to track and manage their health data. The platform allows users to upload sugar levels, oxygen levels, regular medicines, and medical reports. It also features a notification system that alerts users if any health metrics indicate potential issues. Additionally, the website provides BMI reports, helping users monitor their overall health status. The project is designed to be user-friendly, secure, and responsive, ensuring accessibility across devices.",
     tools: ["JavaScript", "Rect", "Express", "MongoDB", "Tailwind"],
-    subImages:["/assets/health-care.png","/assets/health-care.png","/assets/health-care.png","/assets/health-care.png","/assets/health-care.png",]
+    subImages: [
+      "/assets/health-care.png",
+      "/assets/health-care.png",
+      "/assets/health-care.png",
+      "/assets/health-care.png",
+      "/assets/health-care.png",
+    ],
   },
   {
     name: "Food Shop",
     image: "/assets/food-shop.png",
     link: "https://food-shop-app-client.vercel.app/",
-    details: "Currently developing a robust food shop platform that allows users to place food orders while providing an extensive admin dashboard for managing food categories, viewing total sales, and accessing detailed food information. The project features complete API implementation using Express.js and TypeScript, ensuring scalability and maintainability. MongoDB and Mongoose are utilized for efficient data management. The platform is designed to offer a seamless experience for both customers and administrators.",
+    details:
+      "Currently developing a robust food shop platform that allows users to place food orders while providing an extensive admin dashboard for managing food categories, viewing total sales, and accessing detailed food information. The project features complete API implementation using Express.js and TypeScript, ensuring scalability and maintainability. MongoDB and Mongoose are utilized for efficient data management. The platform is designed to offer a seamless experience for both customers and administrators.",
     tools: [
       "Next.js",
       "TypeScript",
@@ -75,6 +169,13 @@ export const projectData = [
       "React-Query",
       "Redux-toolkit",
     ],
-    subImages:["/assets/food-shop.png","/assets/food-shop.png","/assets/food-shop.png","/assets/food-shop.png","/assets/food-shop.png","/assets/food-shop.png",]
+    subImages: [
+      "/assets/food-shop.png",
+      "/assets/food-shop.png",
+      "/assets/food-shop.png",
+      "/assets/food-shop.png",
+      "/assets/food-shop.png",
+      "/assets/food-shop.png",
+    ],
   },
 ];

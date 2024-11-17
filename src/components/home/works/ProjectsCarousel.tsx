@@ -4,12 +4,7 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
-import Image from "next/image";
-import { ubuntu } from "@/constant/fontFamily";
-import { carouselData } from "@/constant/carouselData";
 import ProjectCart from "@/components/projects/ProjectCart";
 import { projectData } from "@/constant/projectData";
 import Autoplay from "embla-carousel-autoplay";
