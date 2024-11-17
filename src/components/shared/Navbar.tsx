@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`w-full top-0 z-[60] transition-all duration-300 border-b-[1px] border-b-grey ${
+      className={`w-full top-0 z-[10] transition-all duration-300 border-b-[1px] border-b-grey ${
         isScrolled
           ? "fixed bg-bg1 shadow-lg opacity-95"
           : "absolute bg-transparent"
@@ -35,7 +35,7 @@ const Navbar = () => {
     >
       <nav className="container mx-auto px-5 2xl:px-0 flex justify-between items-center py-3">
         <div className="flex items-center gap-3">
-          <MSign/>
+          <MSign />
           <p
             className={`text-base md:text-2xl xl:text-3xl font-medium text-white ${ibm.className}`}
           >
@@ -67,7 +67,7 @@ const Navbar = () => {
               Projects
             </p>
           </Link>
-          <Link href={`/blogs`}>
+          {/* <Link href={`/blogs`}>
             {" "}
             <p
               className={`text-base md:text-2xl font-light cursor-pointer ${
@@ -78,7 +78,7 @@ const Navbar = () => {
             >
               Blogs
             </p>
-          </Link>
+          </Link> */}
         </div>
         <div className="block lg:hidden">
           <ToggleSidebar />

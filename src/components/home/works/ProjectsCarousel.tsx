@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import * as React from "react";
 import {
   Carousel,
@@ -12,14 +12,18 @@ import { ubuntu } from "@/constant/fontFamily";
 import { carouselData } from "@/constant/carouselData";
 import ProjectCart from "@/components/projects/ProjectCart";
 import { projectData } from "@/constant/projectData";
-import Autoplay from "embla-carousel-autoplay"
+import Autoplay from "embla-carousel-autoplay";
 
 export function ProjectsCarousel() {
   return (
-    <Carousel opts={{ loop: true }} plugins={[Autoplay({delay:1500})]} className="w-full max-w-xs md:max-w-xl">
+    <Carousel
+      opts={{ loop: true }}
+      plugins={[Autoplay({ delay: 1500 })]}
+      className="w-full container mx-auto px-5"
+    >
       <CarouselContent>
         {projectData.map((item, index) => (
-          <CarouselItem key={index}>
+          <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
             {/* <div className="w-full border rounded-md border-gray-500 bg-bg2">
               <div className="w-full h-52 md:h-72 group cursor-pointer relative text-white">
                 <Image
@@ -44,12 +48,12 @@ export function ProjectsCarousel() {
                 </div>
               </div>
             </div> */}
-            <ProjectCart item={item}/>
+            <ProjectCart item={item} />
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      {/* <CarouselPrevious /> */}
+      {/* <CarouselNext /> */}
     </Carousel>
   );
 }

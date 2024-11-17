@@ -4,6 +4,7 @@ import Image from "next/image";
 import MSign from "../shared/MSign";
 import Social from "../shared/Social";
 import Link from "next/link";
+import SubImageCarousel from "./SubImageCarousel";
 
 interface ItemI {
   name: string;
@@ -11,6 +12,7 @@ interface ItemI {
   details: string;
   link: string;
   tools: string[];
+  subImages?: [];
 }
 interface ProjectCartI {
   item: ItemI;
@@ -49,6 +51,9 @@ const DialogAllContent = ({ item }: ProjectCartI) => {
               height={600}
               className="w-full h-full"
             />
+          </div>
+          <div className="w-full mt-5">
+            <SubImageCarousel subImages={item.subImages} />
           </div>
           <div className="w-full items-center mt-10 px-5 xl:px-0">
             <div className="flex flex-col items-start">
