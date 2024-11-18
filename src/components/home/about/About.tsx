@@ -1,11 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import { ibm } from "@/constant/fontFamily";
+import MotionSection from "@/components/shared/MotionSection";
 const About = () => {
   return (
-    <div
-      id="about"
-      className={`w-full bg-cover  bg-center`}    >
+    <div id="about" className={`w-full bg-cover  bg-center`}>
       <div className="container mx-auto py-20 px-5  2xl:px-0 space-y-20">
         <div className="w-full h-full flex flex-col xl:flex-row justify-between items-start gap-16">
           <div className="w-full xl:w-2/3 h-full flex flex-col justify-between gap-10 2xl:gap-36">

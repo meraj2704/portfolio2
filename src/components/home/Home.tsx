@@ -3,24 +3,35 @@ import Hero from "./hero/Hero";
 import About from "./about/About";
 import Skills from "./skill/Skills";
 import Works from "./works/Works";
-import Blog from "./blogs/Blog";
+
 import Contact from "./contact/Contact";
 import Divider from "../shared/Divider";
+import MotionSection from "../shared/MotionSection";
+// import CustomCursor from "../shared/CustomCursor";
 
 const Home = () => {
   return (
     <div>
-      <Hero />
-     <Divider/>
-      <About />
-      <Divider/>
-      <Skills />
-      <Divider/>
-      <Works />
-      <Divider/>
-      <Blog />
-      <Divider/>
-      <Contact />
+      <MotionSection>
+        <Hero />
+        <Divider />
+      </MotionSection>
+      <MotionSection>
+        <About />
+        <Divider />
+      </MotionSection>
+      <MotionSection>
+        <Skills />
+        <Divider />
+      </MotionSection>
+      <MotionSection>
+        <Works />
+        <Divider />
+      </MotionSection>
+      <MotionSection>
+        <Contact />
+      </MotionSection>
+      {/* <CustomCursor /> */}
     </div>
   );
 };

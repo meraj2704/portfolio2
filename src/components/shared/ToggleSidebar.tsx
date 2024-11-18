@@ -69,7 +69,7 @@ const ToggleSidebar = () => {
               </p>
             </Link>
 
-            <Link href={`/blogs`}>
+            {/* <Link href={`/blogs`}>
               {" "}
               <p
                 onClick={toggleSidebar}
@@ -81,7 +81,7 @@ const ToggleSidebar = () => {
               >
                 Blogs
               </p>
-            </Link>
+            </Link> */}
           </div>
 
           <Social />

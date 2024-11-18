@@ -14,6 +14,10 @@
   --js: #e7a020;
   --react: #28a9e0;
 }
+html,
+body {
+  scroll-behavior: smooth;
+}
 
 .about-bg {
   background-image: url("/assets/.about-bg.jpg");
