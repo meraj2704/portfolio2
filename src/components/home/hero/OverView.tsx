@@ -7,7 +7,7 @@ const OverView = () => {
     <motion.div
       initial={{opacity:0, x: "10vw" }}
       animate={{opacity:1, x: 0 }}
-      transition={{ delay: 0, type: "spring", stiffness: 120 }}
+      transition={{duration:1.2, delay: 0, type: "spring", stiffness: 120 }}
       className="flex justify-center items-center"
     >
       <div

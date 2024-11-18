@@ -15,7 +15,7 @@ const HeroCart = () => {
     <motion.div
     initial={{opacity:0, x:'-10vw'}}
     animate={{opacity:1, x:0}}
-    transition={{delay:0, type:'spring', stiffness:120}}
+    transition={{duration:1.2, delay:0, type:'spring', stiffness:120}}
     className="w-[292px] h-[572px] relative">
       <div className="w-full h-full bg-bg1 absolute border-4 border-brand1 rounded-tl-[160px] rounded-br-[160px]"></div>
       <div className="w-full h-full bg-bg1 absolute border-4 border-white rounded-tl-[160px] rounded-br-[160px] right-[-3px] bottom-[-3px]">
