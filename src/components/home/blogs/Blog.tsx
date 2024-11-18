@@ -7,7 +7,7 @@ import React from "react";
 const Blog = () => {
   const data:IBlog | undefined = blogData[0];
   return (
-    <div id="blogs" className="container mx-auto px-5  2xl:px-0 py-10">
+    <div id="blogs" className="container mx-auto px-5 py-10">
       <SectionTitleHeaderTag
         title="Blogs"
         content="My thoughts on technology and business, welcome to read"

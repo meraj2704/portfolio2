@@ -5,7 +5,7 @@ import BlogCart from "./BlogCart";
 
 const Blogs = () => {
   return (
-    <div className="container mx-auto px-5  2xl:px-0 mb-10 lg:mb-16">
+    <div className="container mx-auto px-5 mb-10 lg:mb-16">
       <SectionTitleHeaderTag
         title="Blogs"
         content="My thoughts on technology and business, welcome to subscribe"

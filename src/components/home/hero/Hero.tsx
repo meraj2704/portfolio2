@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <div id="home" className="w-full py-20 xl:py-28">
-      <div className="container mx-auto px-5  2xl:px-0">
+      <div className="container mx-auto px-5">
         <motion.h1
           initial={{opacity:0, y:10}}
           animate={{opacity:1, y:0}}

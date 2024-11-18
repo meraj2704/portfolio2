@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div className="bg-bg2 py-10 pb-24 lg:pb-10">
       <hr />
-      <div className="container mx-auto px-5  2xl:px-0 flex flex-col xl:flex-row justify-between items-center gap-5 mt-5 ">
+      <div className="container mx-auto px-5 flex flex-col xl:flex-row justify-between items-center gap-5 mt-5 ">
         <div className="flex gap-2 items-center">
           <FaRegCopyright className="text-base text-white opacity-60" />{" "}
           <p
