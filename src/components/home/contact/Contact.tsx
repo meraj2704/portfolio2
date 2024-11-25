@@ -27,7 +27,7 @@ const Contact = () => {
           content="I’m currently available for freelance work"
         />
         <div className="flex justify-center items-center mt-10">
-          <div className="px-10 py-3 border-2 border-brand1 bg-bg1 hover:scale-105 hover:bg-brand1 hover:text-bg2 text-brand2 rounded-tl-[30px] rounded-br-[30px]">
+          <div className="px-10 py-3 border-2 border-brand1  hover:bg-brand1 hover:text-bg2 text-brand2 rounded-tl-[30px] rounded-br-[30px]">
             <p
               className={`text-xl md:text-2xl lg:text-3xl font-thin ${ibm.className}`}
             >
