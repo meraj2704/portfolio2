@@ -7,16 +7,24 @@ import { FaBusinessTime, FaMailBulk } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import SkillButton from "../../ui/SkillButton";
 import ResumeDownloadButton from "./ResumeDownloadButton";
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
+import { useInView } from "react-intersection-observer";
 const ibm = IBM_Plex_Mono({ subsets: ["latin"], weight: ["400", "700"] });
 const HeroCart = () => {
-  const merajImage = "/assets/merajImg.jpg";
+
+  const [ref, inView] = useInView({
+    triggerOnce: false,
+    threshold: 0.2,
+  });
+
   return (
     <motion.div
-    initial={{opacity:0, x:'-10vw'}}
-    animate={{opacity:1, x:0}}
-    transition={{duration:1.2, delay:0, type:'spring', stiffness:120}}
-    className="w-[292px] h-[572px] relative">
+      initial={{ opacity: 0, x: '-5vw' }}
+      // animate={{ opacity: 1, x: 0 }}
+      animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: "-5vw" }}
+      transition={{ duration: 1.5, delay: 0, type: 'spring', stiffness: 120 }}
+      ref={ref}
+      className="w-[292px] h-[572px] relative">
       <div className="w-full h-full bg-bg1 absolute border-4 border-brand1 rounded-tl-[160px] rounded-br-[160px]"></div>
       <div className="w-full h-full bg-bg1 absolute border-4 border-white rounded-tl-[160px] rounded-br-[160px] right-[-3px] bottom-[-3px]">
         <div className="flex flex-col justify-center items-center py-10">
@@ -65,7 +73,7 @@ const HeroCart = () => {
           ))}
         </div>
         <div className="flex justify-start items-center px-5 mt-5">
-            <ResumeDownloadButton/>
+          <ResumeDownloadButton />
         </div>
       </div>
     </motion.div>

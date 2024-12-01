@@ -6,14 +6,14 @@ import { useInView } from "react-intersection-observer";
 
 const OverView = () => {
   const [ref, inView] = useInView({
-    triggerOnce: false, // Animation will happen every time the component comes into view
-    threshold: 0.2, // Trigger when 20% of the component is visible
+    triggerOnce: false,
+    threshold: 0.2,
   });
 
   return (
     <motion.div
-      initial={{ opacity: 0, x: "10vw" }}
-      animate={{ opacity: 1, x: 0 }}
+      initial={{ opacity: 0 }}
+      animate={inView ? { opacity: 1 }: { opacity: 0, x: "5vw" }}
       transition={{ duration: 1.2, delay: 0, type: "spring", stiffness: 120 }}
       className="flex justify-center items-center"
       ref={ref} // Attach the observer to this div
