@@ -12,25 +12,25 @@ import MotionSection from "../shared/MotionSection";
 const Home = () => {
   return (
     <div>
-      <MotionSection>
+      {/* <MotionSection> */}
         <Hero />
         <Divider />
-      </MotionSection>
-      <MotionSection>
+      {/* </MotionSection> */}
+      {/* <MotionSection> */}
         <About />
         <Divider />
-      </MotionSection>
-      <MotionSection>
+      {/* </MotionSection> */}
+      {/* <MotionSection> */}
         <Skills />
         <Divider />
-      </MotionSection>
-      <MotionSection>
+      {/* </MotionSection> */}
+      {/* <MotionSection> */}
         <Works />
         <Divider />
-      </MotionSection>
-      <MotionSection>
+      {/* </MotionSection> */}
+      {/* <MotionSection> */}
         <Contact />
-      </MotionSection>
+      {/* </MotionSection> */}
       {/* <CustomCursor /> */}
     </div>
   );
