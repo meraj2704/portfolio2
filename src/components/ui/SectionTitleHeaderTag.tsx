@@ -24,7 +24,7 @@ const SectionTitleHeaderTag = ({
     >
       <motion.div
         initial={{ opacity: 0, x: 0 }}
-        animate={inView ? { opacity: 1, x: 0 } : { opacity: 0.6, x: "100vw" }}
+        animate={inView ? { opacity: 1, x: 0 } : { opacity: 0.6, x: "50%" }}
         transition={{
           duration: 1.2,
           delay: 0,
@@ -37,7 +37,7 @@ const SectionTitleHeaderTag = ({
       </motion.div>
       <motion.p
         initial={{ opacity: 0, y: 0 }}
-        animate={inView ? { opacity: 1, x: 0 } : { opacity: 0.6, x: "-100vw" }}
+        animate={inView ? { opacity: 1, x: 0 } : { opacity: 0.6, x: "-50%" }}
         transition={{
           duration: 1.2,
           delay: 0,

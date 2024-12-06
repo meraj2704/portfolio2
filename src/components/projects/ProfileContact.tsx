@@ -29,7 +29,7 @@ const ProfileContact = () => {
             />
           </div>
           <div className="flex flex-col items-start justify-start">
-            <h1 className="cursor-pointer">Meraj Hossain</h1>
+            <h1 className="cursor-pointer text-white">Meraj Hossain</h1>
             <div className="flex gap-5 cursor-pointer">
               <p className="text-xs text-green-500">Available Now</p>
               <p className="text-xs text-green-500">Contact Now</p>

@@ -1,5 +1,6 @@
 export const projectData = [
   {
+    id:'1',
     name: "BTDDC",
     image: "/assets/bttdc/bttdc1.png",
     link: "https://bttdc-education.vercel.app/",
@@ -25,6 +26,7 @@ export const projectData = [
     ],
   },
   {
+    id:'2',
     name: "Doctor Prescription",
     image: "/assets/doctor-prescription/prescription1.png",
     link: "https://doctor-rx-plum.vercel.app/prescription",
@@ -40,6 +42,7 @@ export const projectData = [
     ],
   },
   {
+    id:'3',
     name: "Law Firm",
     image: "/assets/law-firm/law-firm1.png",
     link: "https://lawfirm-main.vercel.app/",
@@ -58,6 +61,7 @@ export const projectData = [
     ],
   },
   {
+    id:'4',
     name: "Portfolio-Client",
     image: "/assets/up/up1.png",
     link: "https://client-laniding-page-figma.vercel.app/",
@@ -76,6 +80,7 @@ export const projectData = [
     ],
   },
   {
+    id:'5',
     name: "POS Page",
     image: "/assets/pos-page/pos-page1.png",
     link: "https://uw-pos-page.vercel.app/",
@@ -92,6 +97,7 @@ export const projectData = [
     ],
   },
   {
+    id:'6',
     name: "Restaurant",
     image: "/assets/restaurant/restaurant1.png",
     link: "https://restaurant-lemon-pi.vercel.app/",
@@ -108,6 +114,7 @@ export const projectData = [
     ],
   },
   {
+    id:'7',
     name: "GPT3",
     image: "/assets/gpt/gpt1.png",
     link: "https://gpt3-opal-theta.vercel.app/",
@@ -124,6 +131,7 @@ export const projectData = [
     ],
   },
   {
+    id:'8',
     name: "Modern Bank",
     image: "/assets/hoo-bank/hoo-bank1.png",
     link: "https://hoobank-eight-kappa.vercel.app/",
@@ -140,6 +148,7 @@ export const projectData = [
     ],
   },
   {
+    id:'9',
     name: "Health Care",
     image: "/assets/health-care.png",
     link: "https://health-care-client-phi.vercel.app/",
@@ -155,6 +164,7 @@ export const projectData = [
     ],
   },
   {
+    id:'10',
     name: "Food Shop",
     image: "/assets/food-shop.png",
     link: "https://food-shop-app-client.vercel.app/",
