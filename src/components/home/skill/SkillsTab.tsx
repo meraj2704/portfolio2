@@ -6,46 +6,76 @@ import { TbApi } from "react-icons/tb";
 import SkillCart from "./SkillCart";
 import { backendSkills, frontSkills } from "@/constant/data";
 import { useState } from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 export function SkillsTab() {
+  const [ref, inView] = useInView({
+    triggerOnce: false,
+    threshold: 0.2,
+  });
   const [selectedTab, setSelectedTab] = useState("front-end");
   return (
-    <Tabs defaultValue="front" className="w-full">
+    <Tabs defaultValue="front" className="w-full" ref={ref}>
       <TabsList className="flex justify-center items-center gap-10 xl:gap-20">
-        <TabsTrigger
-          onClick={() => setSelectedTab("front-end")}
-          value="front"
-          className={`${
-            selectedTab === "front-end"
-              ? "bg-brand2 text-bg1"
-              : "bg-transparent text-white "
-          } hover:scale-105 border-y border-r border-y-brand2 border-r-brand2 px-10 py-4 rounded-xl border-l-8 border-l-react`}
+        <motion.div
+          initial={{ opacity: 0, x: 0 }}
+          animate={inView ? { opacity: 1, x: 0 } : { opacity: 0.6, x: "10vw" }}
+          transition={{
+            duration: 1.2,
+            delay: 0,
+            type: "spring",
+            stiffness: 120,
+          }}
         >
-          <div className="flex flex-col justify-center items-center gap-2">
-            <FiMonitor className="text-base md:text-xl xl:text-3xl" />
-            <p
-              className={`text-xs md:text-base xl:text-2xl ${ibm.className}`}
-            >
-              Front-End <span className="hidden md:inline">Developer</span>
-            </p>
-          </div>
-        </TabsTrigger>
-        <TabsTrigger
-          onClick={() => setSelectedTab("backend")}
-          value="backend"
-          className={`${
-            selectedTab === "backend"
-              ? "bg-brand2 text-bg1"
-              : "bg-transparent text-white "
-          } hover:scale-105 border-y border-r border-y-brand2 border-r-brand2 px-10 py-4 rounded-xl border-l-8 border-l-react`}
+          <TabsTrigger
+            onClick={() => setSelectedTab("front-end")}
+            value="front"
+            className={`${
+              selectedTab === "front-end"
+                ? "bg-brand2 text-bg1"
+                : "bg-transparent text-white "
+            } hover:scale-105 border-y border-r border-y-brand2 border-r-brand2 px-10 py-4 rounded-xl border-l-8 border-l-react`}
+          >
+            <div className="flex flex-col justify-center items-center gap-2">
+              <FiMonitor className="text-base md:text-xl xl:text-3xl" />
+              <p
+                className={`text-xs md:text-base xl:text-2xl ${ibm.className}`}
+              >
+                Front-End <span className="hidden md:inline">Developer</span>
+              </p>
+            </div>
+          </TabsTrigger>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: 0 }}
+          animate={inView ? { opacity: 1, x: 0 } : { opacity: 0.6, x: "-10vw" }}
+          transition={{
+            duration: 1.2,
+            delay: 0,
+            type: "spring",
+            stiffness: 120,
+          }}
         >
-          <div className="flex flex-col justify-center items-center gap-2">
-            <TbApi className="text-base md:text-xl xl:text-3xl" />
-            <p className={`text-xs md:text-base xl:text-2xl ${ibm.className}`}>
-              Backend <span className="hidden md:inline">Developer</span>
-            </p>
-          </div>
-        </TabsTrigger>
+          <TabsTrigger
+            onClick={() => setSelectedTab("backend")}
+            value="backend"
+            className={`${
+              selectedTab === "backend"
+                ? "bg-brand2 text-bg1"
+                : "bg-transparent text-white "
+            } hover:scale-105 border-y border-r border-y-brand2 border-r-brand2 px-10 py-4 rounded-xl border-l-8 border-l-react`}
+          >
+            <div className="flex flex-col justify-center items-center gap-2">
+              <TbApi className="text-base md:text-xl xl:text-3xl" />
+              <p
+                className={`text-xs md:text-base xl:text-2xl ${ibm.className}`}
+              >
+                Backend <span className="hidden md:inline">Developer</span>
+              </p>
+            </div>
+          </TabsTrigger>
+        </motion.div>
       </TabsList>
       <TabsContent value="front" className="mt-16 xl:mt-28 px-5 ">
         <h1
