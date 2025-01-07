@@ -17,19 +17,19 @@ const Home = () => {
         <Divider />
       {/* </MotionSection> */}
       {/* <MotionSection> */}
-        <About />
+        {/* <About /> */}
         <Divider />
       {/* </MotionSection> */}
       {/* <MotionSection> */}
-        <Skills />
+        {/* <Skills /> */}
         <Divider />
       {/* </MotionSection> */}
       {/* <MotionSection> */}
-        <Works />
+        {/* <Works /> */}
         <Divider />
       {/* </MotionSection> */}
       {/* <MotionSection> */}
-        <Contact />
+        {/* <Contact /> */}
       {/* </MotionSection> */}
       {/* <CustomCursor /> */}
     </div>
